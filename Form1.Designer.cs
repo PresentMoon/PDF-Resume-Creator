@@ -29,13 +29,49 @@ namespace PDF_Resume_Creator
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.RichTxtBox = new System.Windows.Forms.RichTextBox();
+            this.SaveBttn = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // RichTxtBox
+            // 
+            this.RichTxtBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.RichTxtBox.Location = new System.Drawing.Point(12, 12);
+            this.RichTxtBox.Name = "RichTxtBox";
+            this.RichTxtBox.Size = new System.Drawing.Size(508, 319);
+            this.RichTxtBox.TabIndex = 0;
+            this.RichTxtBox.Text = "";
+            // 
+            // SaveBttn
+            // 
+            this.SaveBttn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.SaveBttn.Location = new System.Drawing.Point(445, 346);
+            this.SaveBttn.Name = "SaveBttn";
+            this.SaveBttn.Size = new System.Drawing.Size(75, 23);
+            this.SaveBttn.TabIndex = 1;
+            this.SaveBttn.Text = "Save";
+            this.SaveBttn.UseVisualStyleBackColor = true;
+            this.SaveBttn.Click += new System.EventHandler(this.SaveBttn_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(532, 381);
+            this.Controls.Add(this.SaveBttn);
+            this.Controls.Add(this.RichTxtBox);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.RichTextBox RichTxtBox;
+        private System.Windows.Forms.Button SaveBttn;
     }
 }
 
